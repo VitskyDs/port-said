@@ -15,18 +15,49 @@
 </head>
 
 <body>
-    <main>
 
+    <nav class="navbar fixed-top justify-content-end">
+        <a class="nav-link" href="">F</a>
+        <a class="nav-link" href="">I</a>
+        <a class="nav-link" href="">MENU</a>
+    </nav>
+    <!--Main Content-->
+    <main>
+        <!--hero section-->
         <section class="container-fluid hero">
-            <h1>Port Said</h1>
-            <h2>Tel Aviv</h2>
+            <div class="brand-logo"></div>
+
+            <div class="down-arrow"></div>
         </section>
-        <section class="container-fluid">
+        <!--section 01 mobile-->
+        <section class="container-fluid section-01 d-sm-none">
+            <div class="row">
+                <div class="col text-box">Port Sa'id is an ultra vibrant bar/restaurant in the heart of Tel-Aviv which celebrates vinyl culture alongside top-quality Mediterranean cuisine</div>
+            </div>
+            <div class="row">
+                <div class="col full-image"></div>
+            </div>
+            <div class="row">
+                <div class="col text-box">
+
+                    <button type="button" class="btn btn-primary btn-lg btn-block">MENU</button>
+                    <br>
+                    <p>A collaboration between celebrated chef Eyal Shani and Tel-Aviv's leading nightlife crew The Teder. We serve contemporary mediterranean dishes preparedfrom freshly-sourced local produce of the highest quality.</p>
+                </div>
+            </div>
+        </section>
+        <!--section 01 tablet and above-->
+        <section class="container-fluid section-01 d-none d-sm-block">
             <div class="container">
                 <div class="row">
-                    <div class="col">hi</div>
-                    <div class="col-8">image</div>
+                    <div class="col text-box">Port Sa'id is an ultra vibrant bar/restaurant in the heart of Tel-Aviv which celebrates vinyl culture alongside top-quality Mediterranean cuisine</div>
                 </div>
+            </div>
+        </section>
+        <!--section 02-->
+        <section class="container-fluid section-02">
+            <div class="row">
+                <div class="col text-box">Whether you're a refined foodie or a music lover, you will not be able to resist our laid-back mediterranean vibes, shared-based plates, and rotating DJ's selecting from our extensiverare vinyl library.</div>
             </div>
         </section>
     </main>

@@ -1,17 +1,78 @@
+/*imports and variables*/
+
+@primary: #C4A27B;
+
+/*Buttons*/
+
+.btn {
+    background-color: #444444;
+    color: @primary;
+    border-radius: 0;
+}
+
+/*Navbar*/
+
+nav {
+    a {
+        color: white;
+    }
+}
+
 /*Sections*/
 
+//generic
+section {
+    .text-box {
+        background: @primary;
+        padding: 40px 16px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+    }
+}
+//specific
 .hero {
+    height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background: #C7A188 url('/images/hero-image.jpg') center center;
+    background-size: cover;
+    .brand-logo {
+        height: 170px;
+        width: 170px;
+        background: transparent url('/images/brand-logo.png') no-repeat center center;
+        background-size: contain;
+    }
+    .down-arrow {
+        width: 32px;
+        height: 66px;
+        position: absolute;
+        bottom: 30px;
+        background: transparent url('/images/down-arrow.svg') no-repeat center center;
+        background-size: contain;
+    }
 }
+.section-01 {
+    background: #C7A188 url('/images/image-02.jpg') no-repeat center bottom;
+    background-size: 150%;
+    .text-box {
+        background: @primary url('/images/paper-texture-wide.jpg') center center;
+        background-size: cover;
+    }
+    .full-image {
+        background: #C7A188 url('/images/image-02.jpg') no-repeat center bottom;
+        background-size: cover;
+        height: 300px;
+    }
+}
+.section-02 {}
 
 /*media Queries*/
 
-@media screen and (min-height: 1024px) {
-    .container {
-        //height: 100vh;
+@media screen and (min-height: 768px) {
+    section {
+        height: 100vh;
     }
 }
