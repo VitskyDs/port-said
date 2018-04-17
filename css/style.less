@@ -1,6 +1,13 @@
 /*imports and variables*/
 
 @primary: #C4A27B;
+@gray: #444444;
+
+/*Generic*/
+
+.hr {
+    height: 5px;
+}
 
 /*Buttons*/
 
@@ -46,8 +53,8 @@ section {
         background-size: contain;
     }
     .down-arrow {
-        width: 32px;
-        height: 66px;
+        width: 50px;
+        height: 93px;
         position: absolute;
         bottom: 30px;
         background: transparent url('/images/down-arrow.svg') no-repeat center center;
@@ -55,8 +62,6 @@ section {
     }
 }
 .section-01 {
-    background: #C7A188 url('/images/image-02.jpg') no-repeat center bottom;
-    background-size: 150%;
     .text-box {
         background: @primary url('/images/paper-texture-wide.jpg') center center;
         background-size: cover;
@@ -67,7 +72,45 @@ section {
         height: 300px;
     }
 }
-.section-02 {}
+.section-02 {
+    background: @primary url('/images/paper-texture-wide.jpg') center center;
+    background-size: cover;
+    .text-box {
+        background-color: transparent;
+    }
+    .image {
+        height: 280px;
+        background: @primary url('/images/image-04.jpg') center center;
+        background-size: cover;
+    }
+}
+.section-03 {
+    background-color: @gray;
+    color: white;
+    .brand-logo {
+        height: 170px;
+        width: 170px;
+        background: transparent url('/images/brand-logo.png') no-repeat center center;
+        background-size: contain;
+    }
+    h4 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+.section-04 {
+    background: @primary url('/images/paper-texture-wide.jpg') center center;
+    background-size: cover;
+    h4 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+}
 
 /*media Queries*/
 
