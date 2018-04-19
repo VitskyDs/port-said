@@ -74,6 +74,7 @@ section {
         text-align: center;
         line-height: 30px;
         font-size: 18px;
+        border: none;
     }
 }
 //specific
@@ -114,9 +115,6 @@ section {
 .section-02 {
     background: @primary url('/images/paper-texture-wide.jpg') center center;
     background-size: cover;
-    .text-box {
-        background-color: transparent;
-    }
     .full-image {
         height: 400px;
         background: @primary url('/images/image-03.jpg') center center;
@@ -207,6 +205,7 @@ section {
         }
     }
 }
+//footer
 footer {
     padding: 20px 0;
 }
@@ -214,7 +213,33 @@ footer {
 /*media Queries*/
 
 @media screen and (min-height: 768px) {
-    section {
-        height: 100vh;
+    /*Generic*/
+    .section-padding {
+        .text-box {
+            border: 4px solid @gray;
+            background: @primary url('/images/paper-texture-wide.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    }
+    /*Section*/
+    .section-padding {
+        height: 90vh;
+        padding: 60px 16px;
+    }
+    .section-02 {
+        background: url('/images/image-02.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .section-03 {
+        background: url('/images/image-03.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .section-04 {
+        background: url('/images/image-04.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .section-05 {
+        background: url('/images/paper-texture-wide.jpg') center center no-repeat;
+        background-size: cover;
     }
 }
