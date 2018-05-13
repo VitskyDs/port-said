@@ -288,6 +288,7 @@ footer {
         background-size: cover;
         height: auto;
         min-height: 0;
+        padding: 48px 32px;
         .rest-hours {
             h4,
             p {
@@ -331,6 +332,7 @@ footer {
         min-height: 0;
         height: auto;
         background-color: #484848;
+        padding: 48px 32px;
         h4 {
             color: white;
         }
@@ -341,8 +343,7 @@ footer {
             .logo-item {
                 height: 70px;
                 flex-basis: 70px;
-
-                margin: 20px 70px 20px 0;
+                margin: 20px 30px 20px 0;
                 &.logo-romano {
                     background: url('../images/romano-logo.png') center center no-repeat;
                     background-size: contain;
@@ -354,7 +355,6 @@ footer {
                 &.logo-port-said {
                     background: url('../images/port-said-logo.png') center center no-repeat;
                     background-size: contain;
-
                 }
                 &.logo-salon {
                     background: url('../images/') center center no-repeat;
@@ -373,7 +373,13 @@ footer {
     }
 }
 // Medium devices (tablets, 768px and up)
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .section-05 {
+        .logos-wrapper {
+            .logo-item {}
+        }
+    }
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {}
 // Extra large devices (large desktops, 1200px and up)
