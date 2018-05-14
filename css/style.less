@@ -28,8 +28,11 @@ h4 {
     font-style: italic;
 }
 p {
-    margin: 0;
+    margin: 0 0 24px 0;
     line-height: 28px;
+    &:last-of-type {
+        margin: 0;
+    }
 }
 small {
     font-size: 12px;
@@ -79,6 +82,8 @@ a {
     font-style: italic;
     box-sizing: border-box;
     line-height: 43px;
+    margin: 40px 0 0 0;
+    padding: 0 36px;
 }
 
 /*Navbar*/
@@ -110,6 +115,40 @@ section {
         line-height: 30px;
         font-size: 18px;
         border: none;
+    }
+}
+.logo-wrapper {
+    display: grid;
+    grid-gap: 30px;
+    padding: 0 16px;
+    .logo-item {
+        height: 80px;
+        width: 100%;
+        //margin: 20px 0;
+        &.logo-romano {
+            background: url('../images/romano-logo.png') center center no-repeat;
+            background-size: contain;
+        }
+        &.logo-miznon {
+            background: url('../images/miznon-logo.svg') center center no-repeat;
+            background-size: contain;
+        }
+        &.logo-port-said {
+            background: url('../images/port-said-logo.png') center center no-repeat;
+            background-size: contain;
+        }
+        &.logo-salon {
+            background: url('../images/') center center no-repeat;
+            background-size: contain;
+        }
+        &.logo-teder {
+            background: url('../images/teder-logo.png') center center no-repeat;
+            background-size: contain;
+        }
+        &.logo-zafon {
+            background: url('../images/zafon-logo.png') center center no-repeat;
+            background-size: contain;
+        }
     }
 }
 //specific
@@ -214,40 +253,11 @@ section {
         text-align: center;
         line-height: 30px;
     }
-    .logo-wrapper {
-        .logo-item {
-            height: 80px;
-            margin: 20px 0;
-            &.logo-romano {
-                background: url('../images/romano-logo.png') center center no-repeat;
-                background-size: contain;
-            }
-            &.logo-miznon {
-                background: url('../images/miznon-logo.svg') center center no-repeat;
-                background-size: contain;
-            }
-            &.logo-port-said {
-                background: url('../images/port-said-logo.png') center center no-repeat;
-                background-size: contain;
-            }
-            &.logo-salon {
-                background: url('../images/') center center no-repeat;
-                background-size: contain;
-            }
-            &.logo-teder {
-                background: url('../images/teder-logo.png') center center no-repeat;
-                background-size: contain;
-            }
-            &.logo-zafon {
-                background: url('../images/zafon-logo.png') center center no-repeat;
-                background-size: contain;
-            }
-        }
-    }
 }
 //footer
 footer {
     padding: 25px 0;
+    text-align: center;
 }
 
 /*media Queries*/
@@ -264,6 +274,15 @@ footer {
             background: @primary url('../images/paper-texture-wide.jpg') no-repeat center center;
             background-size: cover;
             padding: 44px 36px;
+        }
+    }
+    .logo-wrapper {
+        margin-top: 28px;
+        padding: 0;
+        justify-items: start;
+        grid-gap: 8px;
+        .logo-item {
+            //background-position: left !important;
         }
     }
     .section-01 {
@@ -336,47 +355,21 @@ footer {
         h4 {
             color: white;
         }
-        .logos-wrapper {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            .logo-item {
-                height: 70px;
-                flex-basis: 70px;
-                margin: 20px 30px 20px 0;
-                &.logo-romano {
-                    background: url('../images/romano-logo.png') center center no-repeat;
-                    background-size: contain;
-                }
-                &.logo-miznon {
-                    background: url('../images/miznon-logo.svg') center center no-repeat;
-                    background-size: contain;
-                }
-                &.logo-port-said {
-                    background: url('../images/port-said-logo.png') center center no-repeat;
-                    background-size: contain;
-                }
-                &.logo-salon {
-                    background: url('../images/') center center no-repeat;
-                    background-size: contain;
-                }
-                &.logo-teder {
-                    background: url('../images/teder-logo.png') center center no-repeat;
-                    background-size: contain;
-                }
-                &.logo-zafon {
-                    background: url('../images/zafon-logo.png') center center no-repeat;
-                    background-size: contain;
-                }
-            }
-        }
+    }
+    footer {
+        text-align: left;
     }
 }
 // Medium devices (tablets, 768px and up)
 @media screen and (min-width: 768px) {
-    .section-05 {
-        .logos-wrapper {
-            .logo-item {}
+    .logo-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        .logo-item {
+            width: 100%;
+            height: 80px;
+            margin: 0;
         }
     }
 }
