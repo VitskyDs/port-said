@@ -13,6 +13,7 @@ h2 {
   font-size: 32px;
   font-weight: 800;
   margin: 0 0 40px 0;
+  font-style: italic;
 }
 * {
   font: 700 15px/32px Open Sans, sans-serif;
@@ -95,7 +96,6 @@ section .text-box {
   padding: 40px 16px;
   text-align: center;
   line-height: 30px;
-  font-size: 18px;
   border: none;
 }
 .hero {
@@ -281,6 +281,11 @@ footer {
   .section-04 .rest-hours .hr-small {
     margin-left: 0;
   }
+  .section-04 .brand-logo {
+    background: url('../images/logos/port-said-logo.png') center center no-repeat;
+    background-size: 80%;
+    height: 80%;
+  }
   .section-04 .rest-location h4,
   .section-04 .rest-location p {
     text-align: right;
@@ -301,18 +306,13 @@ footer {
     height: 24px;
   }
   .section-04 .social-wrapper .icon.icon-facebook-dark {
-    background: url('../images/icon-facebook-dark.svg') no-repeat center center;
+    background: url('../images/icons/icon-facebook-dark.svg') no-repeat center center;
     background-size: contain;
   }
   .section-04 .social-wrapper .icon.icon-instagram-dark {
-    background: url('../images/icon-instagram-dark.svg') no-repeat center center;
+    background: url('../images/icons/icon-instagram-dark.svg') no-repeat center center;
     background-size: contain;
   }
-  footer {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 768px) {
   .section-05 {
     min-height: 0;
     height: auto;
@@ -322,10 +322,27 @@ footer {
   .section-05 h4 {
     color: white;
   }
-  .logo-wrapper {
+  .section-05 .logo-wrapper {
     margin: 0;
-    background: url('../images/logo-six-pack.png') left center no-repeat;
+    background: url('../images/logos/logo-six-pack.png') left center no-repeat;
     background-size: contain;
     height: 100%;
+  }
+  footer {
+    text-align: left;
+    padding: 4px 16px;
+  }
+}
+@media (min-width: 992px) {
+  nav .nav-link {
+    padding: 16px 12px;
+  }
+  nav .nav-link:last-of-type {
+    padding-right: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-04 .brand-logo {
+    background-size: 50%;
   }
 }

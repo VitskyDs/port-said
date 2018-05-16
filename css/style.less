@@ -11,12 +11,14 @@
     color: #2A2A2A;
 }
 h1 {
-    font-weight: 800
+    font-weight: 800;
 }
 h2 {
     font-size: 32px;
     font-weight: 800;
     margin: 0 0 40px 0;
+        font-style: italic;
+
 }
 * {
     font: 700 15px/32px Open Sans, sans-serif
@@ -114,7 +116,6 @@ section {
         padding: 40px 16px;
         text-align: center;
         line-height: 30px;
-        font-size: 18px;
         border: none;
     }
 }
@@ -315,6 +316,11 @@ footer {
                 margin-left: 0;
             }
         }
+        .brand-logo {
+            background: url('../images/logos/port-said-logo.png') center center no-repeat;
+            background-size: 80%;
+            height: 80%;
+        }
         .rest-location {
             h4,
             p {
@@ -335,22 +341,16 @@ footer {
                 margin-left: 20px;
                 height: 24px;
                 &.icon-facebook-dark {
-                    background: url('../images/icon-facebook-dark.svg') no-repeat center center;
+                    background: url('../images/icons/icon-facebook-dark.svg') no-repeat center center;
                     background-size: contain;
                 }
                 &.icon-instagram-dark {
-                    background: url('../images/icon-instagram-dark.svg') no-repeat center center;
+                    background: url('../images/icons/icon-instagram-dark.svg') no-repeat center center;
                     background-size: contain;
                 }
             }
         }
     }
-    footer {
-        text-align: left;
-    }
-}
-// Medium devices (tablets, 768px and up)
-@media screen and (min-width: 768px) {
     .section-05 {
         min-height: 0;
         height: auto;
@@ -359,15 +359,38 @@ footer {
         h4 {
             color: white;
         }
+        .logo-wrapper {
+            margin: 0;
+            background: url('../images/logos/logo-six-pack.png') left center no-repeat;
+            background-size: contain;
+            height: 100%;
+        }
     }
-    .logo-wrapper {
-        margin: 0;
-        background: url('../images/logo-six-pack.png') left center no-repeat;
-        background-size: contain;
-        height: 100%;
+    footer {
+        text-align: left;
+        padding: 4px 16px;
     }
 }
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) {
+
+}
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    nav {
+    .nav-link {
+        padding: 16px 12px;
+    }
+    .nav-link:last-of-type {
+        padding-right: 24px;
+    }
+    }
+}
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .section-04 {
+        .brand-logo {
+            background-size: 50%;
+        }
+    }
+}
